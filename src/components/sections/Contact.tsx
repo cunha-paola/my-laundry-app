@@ -53,6 +53,16 @@ const Contact: React.FC = () => {
           <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm border border-zinc-100">
             <ChatBubbleOvalLeftEllipsisIcon className="h-8 w-8 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-zinc-900 mb-2">
+<<<<<<< HEAD
+              Number Phone
+            </h3>
+            <p className="text-zinc-600 mb-5 flex-grow">
+              The quickest way to get answers or schedule your pickup. 📞 (689)407-2015
+            </p>
+            <a href="tel:+1(689)407-2015">
+              <Button variant="primary" size="lg" className="w-full">
+                CALL NOW
+=======
               Chat on WhatsApp
             </h3>
             <p className="text-zinc-600 mb-5 flex-grow">
@@ -62,6 +72,7 @@ const Contact: React.FC = () => {
             <a href={whatsappLink} rel="noopener noreferrer">
               <Button variant="primary" size="lg" className="w-full">
                 Talk to a Specialist
+>>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
               </Button>
             </a>
           </div>
@@ -77,6 +88,10 @@ const Contact: React.FC = () => {
               <br />
               Winter Garden, FL 34787
             </address>
+<<<<<<< HEAD
+          
+=======
+>>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
 
             <a
               href={googleMapsLink}
