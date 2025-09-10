@@ -51,21 +51,21 @@ const About: React.FC = () => {
                 </li>
               ))}
             </ul>
+
+            {/* CTA */}
+            <div className="mt-10">
+              <a
+                href="tel:+16894072015"
+                className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                call now
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
-<<<<<<< HEAD
-<a 
-  href="tel:+1(689)407-2015" 
-  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
->
-  📞 call now
-</a>
-
-=======
->>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
 
 export default About;

@@ -2,16 +2,6 @@ import React from "react";
 import Button from "../ui/Button";
 import Link from "next/link";
 
-// WhatsApp Info
-const whatsappNumber = "14076708839"; // No plus sign
-
-const specialistMessage = encodeURIComponent(
-  "Hi! I'm interested in learning more about your laundry services. Can I speak with a specialist?"
-);
-const scheduleMessage = encodeURIComponent(
-  "Hello! I'd like to schedule a laundry pickup. Can you help me with that?"
-);
-
 const Hero: React.FC = () => {
   return (
     <section
@@ -34,39 +24,16 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          {/* Schedule Now Button */}
+          {/* Call Now Button */}
           <Link
-<<<<<<< HEAD
-            href="tel:+1(689)407-2015"
-=======
-            href={`https://wa.me/${whatsappNumber}?text=${scheduleMessage}`}
->>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
+            href="tel:+16894072015"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Button variant="primary" size="lg">
-<<<<<<< HEAD
               Call Now 📞
             </Button>
           </Link>
-
-         
-=======
-              Schedule Now
-            </Button>
-          </Link>
-
-          {/* Talk to Specialist Button */}
-          <Link
-            href={`https://wa.me/${whatsappNumber}?text=${specialistMessage}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="secondary" size="lg">
-              Talk to a Specialist
-            </Button>
-          </Link>
->>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
         </div>
       </div>
     </section>

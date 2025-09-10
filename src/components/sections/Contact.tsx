@@ -24,9 +24,6 @@ const socialLinks = [
 // Direct Google Maps link for the address
 const googleMapsLink =
   "https://www.google.com/maps/search/?api=1&query=10097+Tuller+Loop,+Winter+Garden,+FL+34787";
-// WhatsApp link (replace with your actual number in international format without + or spaces)
-const whatsappNumber = "14076708839"; // EXAMPLE NUMBER - REPLACE
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20A7%20Laundry!%20I'd%20like%20to%20know%20more%20about%20your%20services.`; // Pre-filled message
 
 const Contact: React.FC = () => {
   return (
@@ -49,30 +46,18 @@ const Contact: React.FC = () => {
 
         {/* Contact Info Grid */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
-          {/* Column 1: WhatsApp (Primary Contact) */}
+          {/* Column 1: Phone Contact */}
           <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm border border-zinc-100">
             <ChatBubbleOvalLeftEllipsisIcon className="h-8 w-8 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-zinc-900 mb-2">
-<<<<<<< HEAD
-              Number Phone
+              Call Us
             </h3>
             <p className="text-zinc-600 mb-5 flex-grow">
-              The quickest way to get answers or schedule your pickup. 📞 (689)407-2015
+              The quickest way to get answers or schedule your pickup. 📞 (689) 407-2015
             </p>
-            <a href="tel:+1(689)407-2015">
+            <a href="tel:+16894072015">
               <Button variant="primary" size="lg" className="w-full">
                 CALL NOW
-=======
-              Chat on WhatsApp
-            </h3>
-            <p className="text-zinc-600 mb-5 flex-grow">
-              The quickest way to get answers or schedule your pickup. Tap
-              below!
-            </p>
-            <a href={whatsappLink} rel="noopener noreferrer">
-              <Button variant="primary" size="lg" className="w-full">
-                Talk to a Specialist
->>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
               </Button>
             </a>
           </div>
@@ -88,10 +73,6 @@ const Contact: React.FC = () => {
               <br />
               Winter Garden, FL 34787
             </address>
-<<<<<<< HEAD
-          
-=======
->>>>>>> 263a8605d642bb2afda33bb661c3da41d3fe6a3c
 
             <a
               href={googleMapsLink}
@@ -132,7 +113,7 @@ const Contact: React.FC = () => {
                     aria-label={link.ariaLabel}
                     className="text-zinc-500 hover:text-blue-600 transition-colors duration-150 hover:cursor-pointer"
                   >
-                    {link.name} {/* Displaying name instead of icons */}
+                    {link.name}
                   </a>
                 ))}
               </div>
@@ -140,12 +121,12 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Final Call to Action - Book Pickup via WhatsApp */}
+        {/* Final Call to Action - Book Pickup */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold tracking-tight sm:text-3xl mb-6">
             Ready for effortless laundry?
           </h3>
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+          <a href="tel:+16894072015">
             <Button variant="primary" size="lg">
               Book Your Pickup Now
             </Button>
